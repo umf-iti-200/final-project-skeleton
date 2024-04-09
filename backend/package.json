@@ -1,0 +1,14 @@
+{
+    "name": "final-project-skeleton",
+    "description": "A skeleton for your final project",
+    "version": "0.0.1",
+    "author": "Thiago Ferreira",
+    "license": "MIT",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
