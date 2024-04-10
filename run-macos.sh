@@ -5,5 +5,3 @@ if [ ! -d "$DIRECTORY" ]; then
 fi
 
 node ./backend/server.js
-
-exit 0
