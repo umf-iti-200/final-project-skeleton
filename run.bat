@@ -4,7 +4,6 @@ echo 'Processing for Linux'
 DIRECTORY=backend/node_modules
 
 if [ ! -d "$DIRECTORY" ]; then
-  echo "$DIRECTORY does not exist."
   cd backend
   npm install
   cd ..
@@ -20,7 +19,7 @@ exit 0
 :WINDOWS
 
 if not exist backend/node_modules (
-  npm install --prefix ./backend
+  cd backend && npm install && cd ..
 )
 
 node ./backend/server.js
