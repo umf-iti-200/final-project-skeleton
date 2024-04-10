@@ -20,7 +20,7 @@ exit 0
 :WINDOWS
 
 if not exist backend/node_modules (
-  npm install --prefix backend
+  npm install --prefix ./backend
 )
 
 node ./backend/server.js
