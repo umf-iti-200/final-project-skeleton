@@ -20,4 +20,13 @@ exit 0
 :WINDOWS
 echo "Processing for Windows"
 
+if exist backend/node_modules (
+
+) else (
+  echo "$DIRECTORY does not exist."
+  cd backend
+  npm install
+  cd ..
+)
+
 node ./backend/server.js
