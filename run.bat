@@ -18,13 +18,11 @@ exit 0
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 :WINDOWS
-echo "Processing for Windows"
 
 if not exist backend/node_modules (
-  echo "$DIRECTORY does not exist."
-  cd backend
-  npm install
-  cd ..
+  npm install --prefix backend
 )
 
 node ./backend/server.js
+
+exit 0
